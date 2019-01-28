@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IP Moment</title>
+        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="styles.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script>
+//            jQuery(document).ready(function(e){
+//                function t(t){
+//                    e(t).bind("click",function(t){
+//                        t.preventDefault();
+//                        e(this).parent().fadeOut()
+//                    })
+//                }
+//                e(".dropdown-toggle").click(function(){
+//                    var t=e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
+//                    e(".button-dropdown .dropdown-menu").hide();
+//        e(".button-dropdown .dropdown-toggle").removeClass("active");
+//        if (t) {
+//            e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("active")
+//        }
+//    });
+//    e(document).bind("click", function (t) {
+//        var n = e(t.target);
+//        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
+//    });
+//    e(document).bind("click", function (t) {
+//        var n = e(t.target);
+//        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("active");
+//    })
+//});
+            jQuery(document).ready(function (e) {
+    function t(t) {
+        e(t).bind("click", function (t) {
+            t.preventDefault();
+            e(this).parent().fadeOut()
+        })
+    }
+    e(".dropdown-toggle").click(function () {
+        var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
+        e(".button-dropdown .dropdown-menu").hide();
+        e(".button-dropdown .dropdown-toggle").removeClass("active");
+        if (t) {
+            e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("active")
+        }
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("active");
+    })
+});
+            
+            jQuery(document).ready(function(){
+                $( '#topheader .navbar a' ).on( 'click', function () {
+	               $( '#topheader .navbar' ).find( 'li.active').removeClass( 'active' );
+	               $( this ).parent( 'li' ).addClass( 'active' );
+                });
+            });
+        </script>
+        
+    </head>
+    <body>
+             
+        
+        <div class="home-container" id="myDiv">
+            <div class="overlay">
+                 <div class="nav" id="topheader">    
+                        <img src="assets/Bitmap2.png" id="logo">
+                     
+                <ul class="navbar nav-header ">
+                    <li><a class=" btn" href="#" >Blogs</a></li>
+                    <li><a class=" btn" href="#">Consultancy</a></li>
+                    <li><a class=" btn" href="#">About Us</a></li>
+                    <li><a class=" btn" href="#">Home</a></li>
+                    <li class="button-dropdown"><a class="dropdown-toggle btn" href="javascript:void(0)" >Contact Us<i class="fa fa-sort-down"></i></a>
+                        <ul class="dropdown-menu" style="display: none;">
+                            <li><a>Facebook</a></li>
+                            <li><a>Twitter</a></li>
+                            <li><a>Instagram</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                     
+<!--
+            <div class="navbar nav-header" id="main-menu">
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+                <a href="#" class="btn">Blogs</a>
+                <a href="#" class="btn active">Consultancy</a>
+                <a href="#" class="btn">About Us</a>
+                <a href="#" class="btn">Home</a>
+                <a class="dropbtn btn" onclick="myFunction()">Contact Us
+                    <i class=""></i>
+                </a>
+            </div>
+-->
+           
+
+        </div>
+            </div>
+        </div>
+        
+        <div class="about-container">
+            <div class="left-container">
+                <img src="assets/Bitmap.png" id="about-us">
+            </div>
+            <div class="right-container">
+                <div class="header">
+                    <h4>ABOUT US</h4>
+                    <p class="para-about">IP differs from otherr ip services prividers as the solutions we offer are practical and  "hands-on".We work closely with our clients to get to know the,their business and the issues they face both now and in the longer trem.
+                    <br/>
+                    We also provide intellectual support services to individual researchers/inventors.<br/>We deliver high quality report with speedy turnaround time.</p>
+                    <button class="read-button">Read more</button>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="service">
+            <div class="service-header">
+                <h4 >SERVICES</h4>
+            </div>
+                <div class="block-container">
+                <img class="image-diamond" src="assets/diamond.png" id="dai">
+                <h3>PATENT</h3>
+                <div class="service-block">
+                     <p class="service-para">
+                        With out solution PTO patent searching experience,we provide high quality professional patent search services.
+                            please provide details.                      
+                        </p>
+                    <button class="read-button">Read more</button>
+                </div>
+            </div>
+                <div class="block-container">
+                     <img class="image-diamond" src="assets/diamond.png" id="dai">
+                    <h3>IP MANAGEMENT</h3>
+                    <div class="service-block">
+                        <p class="service-para">
+                    Patent portfolio management,Computer portfolio analysis,Recent Technology Trends,patent process stratergy.
+                        
+                    </p>
+                        <button class="read-button">Read more</button></div>
+                </div>
+                <div class="block-container">
+                    <img class="image-diamond" src="assets/diamond.png" id="dai">
+                    <h3>SUPPORT SERVICES</h3>
+                    <div class="service-block">
+                            <p class="service-para">
+                            You can send instructions or rough sketches and it will be completed in a short interval usually within a week and then send you a draft for your.
+                            </p>
+                        <button class="read-button">Read more</button>
+                    </div>
+                </div>
+        </div>
+        
+        <div class="footer">
+    
+                <div class="footer-div-container">
+                    <div class="footer-image">
+                        <img id="footer-logo" src="assets/Bitmap2.png">
+                    </div>
+                    <div class="footer-note">
+                        <p>
+                            IP Moment is an excellence driven company with a passion for technology where people love what they do. We focus on delivering values, creating impact & producing exciting experiences.
+
+    A blend of a good idea, creativity, simplicity, robust technical implementation and an exceptional team is nothing less than an innovation. We pride ourselves for that.
+                        </p><br/>
+                        <h3 class="footer-ceo">Paula Jane</h3>
+                        <h3 class="footer-ceo">CEO</h3>
+                    </div>
+                </div>
+
+
+                <div class="footer-div-container">
+                    <div class="footer-header">
+                        <h2>SOCIAL NETWORKS</h2>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com" class="social"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.twitter.com" class="social"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com" class="social"><i class="fa fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+
+
+                <div class="footer-div-container">
+                    <div class="footer-header">
+                        <h2>CONTACT US</h2>
+                    </div>
+                            
+                            <ul class="footer-contact">
+
+                             <li class="footer-row">
+                                    <i class="fa fa-envelope footer-contact-content"></i>
+                                    <a class="email footer-contact-content">info@ipmonent.com</a>
+                             </li>
+                             <li  class="footer-row">
+                                 <i class="fa fa-map-marker footer-contact-content"></i>
+                                   <span class="footer-contact-content"> B-301, Monalisa Business Center, 
+                                    Near More Mega Store, Manjalpur,
+                                    Vadodara, Gujarat, India - 390011</span>
+                             </li>
+                             <li  class="footer-row">
+                                <i class="fa fa-phone footer-contact-content"></i>
+                                    <span class="footer-contact-content">+91-992-503-6216</span>
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+           
+    </body>
+</html>
